@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prudle | Skill Evaluation</title>
+    <meta name="description" content="Prudle Education Skill Evaluation portal for trainers to record, calculate, and analyze student competencies across Listening, Speaking, Reading, Writing, Grammar, and Vocabulary." />
+    <meta property="og:title" content="Prudle | Skill Evaluation" />
+    <meta property="og:description" content="Prudle Education Skill Evaluation portal for trainers to record, calculate, and analyze student competencies across Listening, Speaking, Reading, Writing, Grammar, and Vocabulary." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      (function(){
+        const hosts = new Set(["www.prudle-education.com", "prudle-education.com", "abbassaboali-alt.github.io"]);
+        document.addEventListener("keydown", function(e){
+          if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s") {
+            e.preventDefault();
+          }
+        }, true);
+        const isDevHost = location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname.endsWith(".run.app");
+        if (!isDevHost) {
+          if (location.protocol !== "https:" || !hosts.has(location.hostname.toLowerCase())) {
+            window.stop();
+            location.replace("https://www.prudle-education.com/log-in-out");
+          }
+        }
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="module" crossorigin src="./assets/index-CbpzIDgi.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BUbU0Hfu.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
